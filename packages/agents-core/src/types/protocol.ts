@@ -939,7 +939,7 @@ export type StreamEventResponseCompleted = z.infer<
  */
 export const StreamEventGenericItem = SharedBase.extend({
   type: z.literal('model'),
-  event: z.any().describe('The event from the model'),
+  event: z.unknown().describe('The event from the model'),
 });
 export type StreamEventGenericItem = z.infer<typeof StreamEventGenericItem>;
 
